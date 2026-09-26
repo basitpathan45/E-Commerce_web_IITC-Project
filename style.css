@@ -86,7 +86,7 @@ h1 em, h2 em { font-family: Georgia, serif; font-weight: 400; }
 .sale-spark { color: #ef9a73; font-size: 36px; }
 .sale-kicker { display: block; color: #c3d0c1; font-size: 8px; }
 .sale-banner h2 { margin: 7px 0 0; font-family: var(--display); font-size: 20px; font-weight: 500; letter-spacing: -.04em; }
-.sale-banner h2 em { color: #090909; }
+.sale-banner h2 em { color: #040404; }
 .sale-countdown-wrap { text-align: center; }
 .countdown { display: flex; align-items: flex-start; justify-content: center; gap: 8px; margin-top: 7px; }
 .countdown span { display: flex; min-width: 30px; flex-direction: column; align-items: center; }
