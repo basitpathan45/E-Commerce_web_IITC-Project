@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f7f2">
+  <title>LALAstore — Good things, well found.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <div class="announcement">
+    <span>GOOD THINGS, GOOD PRICES</span>
+    <span class="announcement-note">Free delivery on orders over 5 items <span aria-hidden="true">✳</span></span>
+    <a href="#shop">Shop the edit <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="LALAstore home">LALAstore<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#shop">Shop all</a>
+      <a href="#categories">Categories</a>
+      <a href="#sale">The good sale</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box" for="search-input">
+        <span aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" placeholder="Find your good thing" autocomplete="off">
+        <kbd>⌘ K</kbd>
+      </label>
+      <button class="icon-button account-button" type="button" aria-label="Your account">♙</button>
+      <button class="cart-button" id="open-cart" type="button" aria-label="Open shopping bag">
+        <span class="bag-icon" aria-hidden="true">🛒</span>
+        <span>Cart</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE MORE GOOD IN EVERY DAY</div>
+        <h1 id="hero-title">Find your<br>kind of <em>good.</em></h1>
+        <p>Thoughtful everyday things, picked to make life feel a little brighter. Good quality, fair prices, no guesswork.</p>
+        <a class="button button-dark" href="#shop">Meet your new favorites <span aria-hidden="true">↘</span></a>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span><span>+</span></div>
+          <div><strong>4.9 out of 5</strong><small>from 2,400+ happy humans</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1000&q=85" alt="Colorful reusable water bottles in a bright studio">
+        <div class="hero-sticker"><span>THE GOOD<br>STUFF</span><strong>✳</strong></div>
+        <div class="hero-caption"><span>01 / EVERYDAY FAVORITES</span><span>Made for your real life</span></div>
+      </div>
+      <div class="hero-side-note">LESS SCROLLING, MORE GOOD LIVING &nbsp; ✳ &nbsp; LESS SCROLLING, MORE GOOD LIVING &nbsp; ✳ &nbsp;</div>
+    </section>
+
+    <section class="category-strip" id="categories" aria-label="Shop by category">
+      <span class="strip-label">A GOOD PLACE TO START</span>
+      <div class="category-links">
+        <button class="category-pill active" type="button" data-category="All">Everything <span>12</span></button>
+        <button class="category-pill" type="button" data-category="Home">Home <span>03</span></button>
+        <button class="category-pill" type="button" data-category="Lifestyle">Lifestyle <span>03</span></button>
+        <button class="category-pill" type="button" data-category="Wellness">Wellness <span>03</span></button>
+        <button class="category-pill" type="button" data-category="Accessories">Accessories <span>03</span></button>
+      </div>
+      <span class="strip-sparkle" aria-hidden="true">✳</span>
+    </section>
+
+    <section class="sale-banner" id="sale" aria-label="Flash sale">
+      <div class="sale-message">
+        <span class="sale-spark" aria-hidden="true">✳</span>
+        <div><span class="sale-kicker">A LITTLE TREAT, ON US</span><h2>The good stuff, <em>even better.</em></h2></div>
+      </div>
+      <div class="sale-countdown-wrap">
+        <span class="sale-kicker">THE GOOD SALE ENDS IN</span>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <span><strong id="timer-hours">00</strong><small>HRS</small></span><i>:</i>
+          <span><strong id="timer-minutes">00</strong><small>MIN</small></span><i>:</i>
+          <span><strong id="timer-seconds">00</strong><small>SEC</small></span>
+        </div>
+      </div>
+      <a href="#shop" class="sale-link">Shop the sale <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><span class="eyebrow">THE GOOD FINDS</span><h2>Meet the <em>favorites.</em></h2></div>
+        <p>Useful, lovely, and ready to be yours.</p>
+      </div>
+      <div class="shop-toolbar">
+        <div class="result-count"><span id="result-count">12</span> good things to love</div>
+        <div class="toolbar-controls">
+          <div class="price-control">
+            <label for="price-filter">Price up to <strong id="price-label">PKR 3000</strong></label>
+            <input id="price-filter" type="range" min="10" max="200" value="200" step="5">
+          </div>
+          <label class="sort-control" for="sort-select">Sort by
+            <select id="sort-select">
+              <option value="featured">Featured</option>
+              <option value="low-high">Price: low to high</option>
+              <option value="high-low">Price: high to low</option>
+              <option value="rating">Top rated</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="active-filters" id="active-filters" aria-live="polite"></div>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span>✳</span><h3>No good things found just yet.</h3><p>Try a different search or reset your filters.</p>
+        <button class="button button-dark" id="reset-filters" type="button">Clear filters</button>
+      </div>
+      <div class="shop-bottom-note"><span>✳</span> GOOD THINGS, PICKED WITH YOU IN MIND <span>✳</span></div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-mark" aria-hidden="true">g.</div>
+      <div><span class="eyebrow">A NOTE FROM THE GOOD SIDE</span><h2>A little good in your inbox.</h2><p>First dibs, fresh finds, and 10% off your first order. No weird stuff.</p></div>
+      <form id="newsletter-form" class="newsletter-form">
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <input id="newsletter-email" type="email" placeholder="Your email address" required>
+        <button type="submit" aria-label="Sign up">↗</button>
+        <span class="newsletter-feedback" id="newsletter-feedback" aria-live="polite"></span>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#">LALAstore<span>.</span></a>
+    <span>Good things for the everyday. © 2026 LALAstore Market.</span>
+    <div><a href="#shop">Instagram</a><a href="#shop">Our story</a><a href="#shop">Help & support</a></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="drawer-header">
+      <div><span class="eyebrow">YOUR GOOD FINDS</span><h2 id="cart-title">Your bag <span id="drawer-count">(0)</span></h2></div>
+      <button class="close-button" id="close-cart" type="button" aria-label="Close bag">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>♧</span><h3>Your bag is feeling light.</h3><p>Let's find something good for it.</p><button class="button button-dark" id="continue-shopping" type="button">Keep looking</button></div>
+    <div class="cart-summary" id="cart-summary">
+      <form class="coupon-form" id="coupon-form">
+        <label for="coupon-input">Have a little code?</label>
+        <div><input id="coupon-input" type="text" placeholder="Enter code" autocomplete="off"><button type="submit">Apply</button></div>
+        <span class="coupon-feedback" id="coupon-feedback" aria-live="polite"></span>
+      </form>
+      <div class="totals">
+        <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+        <div id="discount-row" hidden><span>LALAstore discount</span><strong id="discount-amount">−$0.00</strong></div>
+        <div><span>Delivery</span><strong id="delivery">$0.00</strong></div>
+        <div class="grand-total"><span>Total</span><strong id="grand-total">$0.00</strong></div>
+        <p class="delivery-note" id="delivery-note"></p>
+      </div>
+      <button class="button button-dark checkout-button" id="checkout-button" type="button">Go to checkout <span>↗</span></button>
+      <p class="secure-note">♡ &nbsp; Good things, securely yours</p>
+    </div>
+  </aside>
+
+  <div class="modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true">
+    <div class="modal-card checkout-card">
+      <button class="close-button modal-close" type="button" data-close-modal aria-label="Close checkout">×</button>
+      <div id="checkout-view">
+        <span class="eyebrow">ALMOST YOURS</span>
+        <h2 id="checkout-title">Let's make it <em>official.</em></h2>
+        <p class="modal-intro">Add your details and we'll get the good stuff on its way.</p>
+        <form id="checkout-form">
+          <div class="form-row"><label>First name<input name="firstName" type="text" autocomplete="given-name" required></label><label>Last name<input name="lastName" type="text" autocomplete="family-name" required></label></div>
+          <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+          <label>Street address<input name="address" type="text" autocomplete="street-address" required></label>
+          <div class="form-row"><label>City<input name="city" type="text" autocomplete="address-level2" required></label><label>ZIP code<input name="zip" type="text" autocomplete="postal-code" pattern="[A-Za-z0-9\x20\-]{3,10}" required></label></div>
+          <div class="checkout-total"><span>Order total</span><strong id="checkout-total">$0.00</strong></div>
+          <button class="button button-dark checkout-submit" type="submit">Place your order <span>↗</span></button>
+          <p class="secure-note">Demo checkout — no payment will be collected.</p>
+        </form>
+      </div>
+      <div class="order-confirmation" id="order-confirmation" hidden>
+        <div class="confirmation-spark">✳</div><span class="eyebrow">THAT'S A GOOD CHOICE</span>
+        <h2>It's officially <em>yours.</em></h2>
+        <p>Your order is in, and the good stuff is getting ready to go.</p>
+        <div class="order-number">YOUR ORDER NUMBER<strong id="order-number"></strong></div>
+        <button class="button button-dark" id="finish-order" type="button">Back to the good stuff</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
