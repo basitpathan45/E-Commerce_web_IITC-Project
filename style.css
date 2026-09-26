@@ -81,7 +81,7 @@ h1 em, h2 em { font-family: Georgia, serif; font-weight: 400; }
 .category-pill.active { font-weight: 700; }
 .strip-sparkle { margin-left: auto; color: #e28a68; font-size: 23px; }
 
-.sale-banner { min-height: 108px; margin: 36px 5.4% 0; padding: 17px 4%; display: flex; align-items: center; justify-content: space-between; gap: 25px; color: #fff; background: #264b3b; }
+.sale-banner { min-height: 108px; margin: 36px 5.4% 0; padding: 17px 4%; display: flex; align-items: center; justify-content: space-between; gap: 25px; color: #fff; background: #000000; }
 .sale-message { display: flex; align-items: center; gap: 16px; }
 .sale-spark { color: #ef9a73; font-size: 36px; }
 .sale-kicker { display: block; color: #c3d0c1; font-size: 8px; }
